@@ -3,7 +3,7 @@
 {% block header %}{{group}}{% endblock %}
 
 {% block content %} 
-<p>{{group.description|linebreaksbr}}</p></h3>
+  <h3><p>{{group.description|linebreaksbr}}</p></h3>
   {% for post in posts %}
     <h3>
       Автор: {{ post.author.get_full_name }}, 
